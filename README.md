@@ -11,7 +11,23 @@ RecipeGenie is an AI-powered recipe recommendation system that helps users disco
 - 🔎 Semantic retrieval using embeddings and FAISS
 - 📊 Ingredient Match and Recipe Coverage information
 - 🧾 Displays ingredients you have and ingredients you need
+## 📸 Project Screenshots
 
+### 🏠 Home Page
+![RecipeGenie Homepage](screenshots/homepage.png)
+
+### 🥗 Ingredient Input
+![Ingredient Input](screenshots/ingredient.png)
+
+### 🍲 Recipe Recommendations
+![Recipe Recommendations](screenshots/recipes.png)
+
+### 🍽️ Recommended Recipes
+![Recommended Recipe 1](screenshots/recommended_recipe1.png)
+
+![Recommended Recipe 2](screenshots/recommeded_recipe2.png)
+
+![Recommended Recipe 3](screenshots/recommended_recipe3.png)
 ## 🛠️ Tech Stack
 
 ### Frontend
