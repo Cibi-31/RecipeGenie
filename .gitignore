@@ -2,7 +2,7 @@
 .env
 .env.*
 
-# Python
+# Python environments
 .venv/
 .venv-1/
 venv/
