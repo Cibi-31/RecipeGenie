@@ -19,3 +19,6 @@ frontend-react/dist/
 
 # Logs
 *.log
+
+# Generated output images
+backend/generated-images/
