@@ -1,0 +1,617 @@
+/* =========================================================
+   RECIPEGENIE - ABOUT PAGE
+   ========================================================= */
+
+.about-page {
+  min-height: 100vh;
+  background: #fffdf8;
+  color: #26352c;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* ==================== NAVBAR ==================== */
+
+.about-navbar {
+  width: 100%;
+  min-height: 78px;
+  padding: 0 7%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: rgba(255, 253, 248, 0.97);
+  border-bottom: 1px solid #eee9df;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-sizing: border-box;
+}
+
+.about-logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+  color: inherit;
+}
+
+.about-logo-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 14px;
+  background: #e8f5e9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+}
+
+.about-logo-title {
+  font-size: 21px;
+  font-weight: 800;
+  color: #254b35;
+}
+
+.about-logo-subtitle {
+  font-size: 11px;
+  color: #7b877f;
+  margin-top: 2px;
+}
+
+.about-nav-links {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.about-nav-link {
+  text-decoration: none;
+  color: #59645d;
+  font-size: 14px;
+  font-weight: 600;
+  position: relative;
+  transition: 0.25s ease;
+}
+
+.about-nav-link:hover,
+.about-nav-link.active {
+  color: #2f7d4a;
+}
+
+.about-nav-link.active::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -9px;
+  height: 2px;
+  background: #2f7d4a;
+  border-radius: 10px;
+}
+
+.about-start-btn {
+  text-decoration: none;
+  padding: 12px 21px;
+  background: #2f7d4a;
+  color: white;
+  border-radius: 10px;
+  font-size: 13px;
+  font-weight: 700;
+  transition: 0.25s ease;
+}
+
+.about-start-btn:hover {
+  background: #24643b;
+  transform: translateY(-2px);
+}
+
+
+/* ==================== HERO ==================== */
+
+.about-hero {
+  min-height: 500px;
+  padding: 80px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background:
+    radial-gradient(circle at 20% 25%, #edf8eb 0, transparent 28%),
+    radial-gradient(circle at 80% 75%, #f5efe2 0, transparent 30%),
+    #fffdf8;
+  box-sizing: border-box;
+}
+
+.about-hero-icon {
+  width: 105px;
+  height: 105px;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #e7f4e5;
+  font-size: 58px;
+  margin-bottom: 30px;
+  box-shadow: 0 18px 40px rgba(50, 90, 55, 0.1);
+}
+
+.about-label,
+.about-section-label {
+  color: #2f7d4a;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  margin-bottom: 17px;
+}
+
+.about-hero h1 {
+  margin: 0;
+  font-size: clamp(45px, 6vw, 72px);
+  line-height: 1.03;
+  letter-spacing: -2px;
+  color: #29392f;
+}
+
+.about-hero h1 span {
+  color: #3b8d55;
+}
+
+.about-hero p {
+  max-width: 680px;
+  margin: 25px auto 0;
+  color: #707b73;
+  font-size: 17px;
+  line-height: 1.8;
+}
+
+
+/* ==================== MISSION ==================== */
+
+.about-mission {
+  padding: 95px 8%;
+  background: white;
+}
+
+.mission-content {
+  max-width: 1150px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 0.8fr;
+  gap: 90px;
+  align-items: center;
+}
+
+.mission-text h2 {
+  margin: 0 0 25px;
+  font-size: clamp(34px, 4vw, 52px);
+  line-height: 1.12;
+  color: #293a30;
+}
+
+.mission-text h2 span {
+  color: #3b8d55;
+}
+
+.mission-text p {
+  color: #707c74;
+  line-height: 1.8;
+  font-size: 15px;
+  margin-bottom: 18px;
+}
+
+
+/* ==================== MISSION VISUAL ==================== */
+
+.mission-visual {
+  height: 390px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mission-circle {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  background: #e9f5e7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 100px;
+  box-shadow:
+    0 25px 60px rgba(50, 90, 55, 0.12),
+    inset 0 0 0 15px rgba(255, 255, 255, 0.6);
+}
+
+.mission-food {
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  border-radius: 21px;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 38px;
+  box-shadow: 0 14px 30px rgba(40, 70, 45, 0.12);
+}
+
+.food-a {
+  top: 30px;
+  left: 45px;
+}
+
+.food-b {
+  top: 10px;
+  right: 45px;
+}
+
+.food-c {
+  bottom: 35px;
+  left: 65px;
+}
+
+.food-d {
+  bottom: 20px;
+  right: 60px;
+}
+
+
+/* ==================== FEATURES ==================== */
+
+.about-features {
+  padding: 90px 7%;
+  text-align: center;
+  background: #f7faf5;
+}
+
+.about-features > h2 {
+  margin: 0;
+  font-size: clamp(32px, 4vw, 48px);
+  color: #293a30;
+}
+
+.about-features h2 span {
+  color: #3b8d55;
+}
+
+.about-feature-grid {
+  max-width: 1100px;
+  margin: 55px auto 0;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 22px;
+}
+
+.about-feature-card {
+  padding: 32px 23px;
+  background: white;
+  border: 1px solid #e8ede6;
+  border-radius: 18px;
+  transition: 0.25s ease;
+}
+
+.about-feature-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 18px 40px rgba(50, 80, 55, 0.08);
+}
+
+.about-feature-icon {
+  width: 67px;
+  height: 67px;
+  border-radius: 18px;
+  background: #eaf6e9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 20px;
+  font-size: 34px;
+}
+
+.about-feature-card h3 {
+  margin: 0 0 12px;
+  color: #304636;
+  font-size: 17px;
+}
+
+.about-feature-card p {
+  margin: 0;
+  color: #778178;
+  line-height: 1.7;
+  font-size: 13px;
+}
+
+
+/* ==================== AI TECHNOLOGY ==================== */
+
+.about-tech {
+  padding: 95px 8%;
+  text-align: center;
+  background: white;
+}
+
+.about-tech > h2 {
+  margin: 0;
+  font-size: clamp(32px, 4vw, 48px);
+  color: #293a30;
+}
+
+.about-tech h2 span {
+  color: #3b8d55;
+}
+
+.about-tech-intro {
+  max-width: 650px;
+  margin: 18px auto 55px;
+  color: #737d76;
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+.about-tech-flow {
+  max-width: 850px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+}
+
+.tech-flow-item {
+  width: 210px;
+  min-height: 170px;
+  border-radius: 18px;
+  border: 1px solid #e4ebe3;
+  background: #fbfdf9;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 10px 25px rgba(50, 80, 55, 0.05);
+}
+
+.tech-flow-icon {
+  width: 60px;
+  height: 60px;
+  border-radius: 16px;
+  background: #e9f5e7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 31px;
+  margin-bottom: 15px;
+}
+
+.tech-flow-item strong {
+  color: #304636;
+  font-size: 16px;
+}
+
+.tech-flow-item span {
+  margin-top: 7px;
+  color: #879188;
+  font-size: 12px;
+}
+
+.tech-flow-arrow {
+  color: #67a072;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+
+/* ==================== CTA ==================== */
+
+.about-cta {
+  padding: 90px 20px;
+  text-align: center;
+  background: #eaf5e7;
+}
+
+.about-cta-icon {
+  font-size: 48px;
+  margin-bottom: 15px;
+}
+
+.about-cta h2 {
+  margin: 0 0 12px;
+  color: #294232;
+  font-size: clamp(32px, 4vw, 46px);
+}
+
+.about-cta p {
+  margin: 0 auto 27px;
+  color: #6d796f;
+  font-size: 15px;
+}
+
+.about-cta-btn {
+  display: inline-block;
+  padding: 14px 25px;
+  background: #2f7d4a;
+  color: white;
+  text-decoration: none;
+  border-radius: 11px;
+  font-weight: 700;
+  font-size: 14px;
+  transition: 0.25s ease;
+}
+
+.about-cta-btn:hover {
+  background: #24643b;
+  transform: translateY(-3px);
+}
+
+
+/* ==================== FOOTER ==================== */
+
+.about-footer {
+  padding: 40px 8%;
+  background: #1f3327;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+}
+
+.about-footer strong {
+  font-size: 19px;
+}
+
+.about-footer p {
+  margin: 7px 0 0;
+  color: #aab8af;
+  font-size: 12px;
+}
+
+.about-footer-links {
+  display: flex;
+  gap: 25px;
+}
+
+.about-footer-links a {
+  color: #c9d4cd;
+  text-decoration: none;
+  font-size: 13px;
+}
+
+.about-footer-links a:hover {
+  color: white;
+}
+
+
+/* ==================== RESPONSIVE ==================== */
+
+@media (max-width: 1050px) {
+
+  .about-navbar {
+    padding: 0 4%;
+  }
+
+  .about-nav-links {
+    gap: 18px;
+  }
+
+  .mission-content {
+    gap: 50px;
+  }
+
+  .about-feature-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+
+@media (max-width: 750px) {
+
+  .about-navbar {
+    min-height: auto;
+    padding: 15px 5%;
+    flex-wrap: wrap;
+    gap: 18px;
+  }
+
+  .about-nav-links {
+    width: 100%;
+    order: 3;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .about-start-btn {
+    margin-left: auto;
+  }
+
+  .about-hero {
+    padding: 65px 7%;
+  }
+
+  .about-hero h1 {
+    font-size: 45px;
+  }
+
+  .about-hero p {
+    font-size: 14px;
+  }
+
+  .mission-content {
+    grid-template-columns: 1fr;
+  }
+
+  .mission-text {
+    text-align: center;
+  }
+
+  .mission-visual {
+    margin-top: 15px;
+  }
+
+  .about-feature-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about-tech-flow {
+    flex-direction: column;
+  }
+
+  .tech-flow-arrow {
+    transform: rotate(90deg);
+  }
+
+  .about-footer {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-footer-links {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+
+@media (max-width: 480px) {
+
+  .about-logo-subtitle {
+    display: none;
+  }
+
+  .about-nav-link {
+    font-size: 12px;
+  }
+
+  .about-start-btn {
+    padding: 10px 14px;
+    font-size: 12px;
+  }
+
+  .about-hero-icon {
+    width: 85px;
+    height: 85px;
+    font-size: 45px;
+  }
+
+  .about-hero h1 {
+    font-size: 39px;
+  }
+
+  .mission-circle {
+    width: 200px;
+    height: 200px;
+    font-size: 78px;
+  }
+
+  .mission-food {
+    width: 55px;
+    height: 55px;
+    font-size: 29px;
+  }
+
+  .tech-flow-item {
+    width: 100%;
+    max-width: 240px;
+  }
+}

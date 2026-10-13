@@ -1,0 +1,21 @@
+# Secrets
+.env
+.env.*
+
+# Python
+.venv/
+.venv-1/
+venv/
+__pycache__/
+*.py[cod]
+
+# Node.js
+node_modules/
+frontend-react/node_modules/
+frontend-react/dist/
+
+# Ignore old frontend
+/frontend/
+
+# Logs
+*.log

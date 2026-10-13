@@ -1,0 +1,683 @@
+/* =========================================================
+   RECIPEGENIE - HOW IT WORKS PAGE
+   ========================================================= */
+
+.how-page {
+  min-height: 100vh;
+  background: #fffdf8;
+  color: #26352c;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* ==================== NAVBAR ==================== */
+
+.how-navbar {
+  width: 100%;
+  min-height: 78px;
+  padding: 0 7%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: rgba(255, 253, 248, 0.97);
+  border-bottom: 1px solid #eee9df;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-sizing: border-box;
+}
+
+.how-logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+  color: inherit;
+}
+
+.how-logo-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #e8f5e9;
+  font-size: 28px;
+}
+
+.how-logo-title {
+  font-size: 21px;
+  font-weight: 800;
+  color: #254b35;
+}
+
+.how-logo-subtitle {
+  font-size: 11px;
+  color: #7b877f;
+  margin-top: 2px;
+}
+
+.how-nav-links {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.how-nav-link {
+  text-decoration: none;
+  color: #59645d;
+  font-size: 14px;
+  font-weight: 600;
+  transition: 0.25s ease;
+  position: relative;
+}
+
+.how-nav-link:hover,
+.how-nav-link.active {
+  color: #2f7d4a;
+}
+
+.how-nav-link.active::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -9px;
+  height: 2px;
+  background: #2f7d4a;
+  border-radius: 10px;
+}
+
+.how-start-btn {
+  text-decoration: none;
+  padding: 12px 21px;
+  background: #2f7d4a;
+  color: white;
+  border-radius: 10px;
+  font-size: 13px;
+  font-weight: 700;
+  transition: 0.25s ease;
+}
+
+.how-start-btn:hover {
+  background: #24643b;
+  transform: translateY(-2px);
+}
+
+
+/* ==================== HERO ==================== */
+
+.how-hero {
+  min-height: 520px;
+  padding: 70px 9%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 60px;
+  box-sizing: border-box;
+  background:
+    radial-gradient(circle at 85% 30%, #edf8ed 0, transparent 30%),
+    linear-gradient(135deg, #fffdf8, #f6fbf4);
+}
+
+.how-hero-content {
+  max-width: 650px;
+}
+
+.how-label,
+.how-section-label {
+  color: #2f7d4a;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  margin-bottom: 18px;
+}
+
+.how-hero h1 {
+  margin: 0;
+  font-size: clamp(42px, 5vw, 68px);
+  line-height: 1.05;
+  letter-spacing: -2px;
+  color: #26352c;
+}
+
+.how-hero h1 span {
+  color: #3b8d55;
+}
+
+.how-hero-content > p {
+  max-width: 600px;
+  margin: 26px 0 30px;
+  color: #66726a;
+  font-size: 17px;
+  line-height: 1.8;
+}
+
+.how-hero-btn {
+  display: inline-block;
+  padding: 14px 25px;
+  border-radius: 11px;
+  background: #2f7d4a;
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 700;
+  box-shadow: 0 10px 25px rgba(47, 125, 74, 0.18);
+  transition: 0.25s ease;
+}
+
+.how-hero-btn:hover {
+  background: #24643b;
+  transform: translateY(-3px);
+}
+
+
+/* ==================== HERO VISUAL ==================== */
+
+.how-hero-visual {
+  width: 430px;
+  height: 430px;
+  position: relative;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.how-big-icon {
+  width: 270px;
+  height: 270px;
+  border-radius: 50%;
+  background: #e5f3e4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 125px;
+  box-shadow:
+    0 25px 60px rgba(47, 125, 74, 0.12),
+    inset 0 0 0 15px rgba(255, 255, 255, 0.55);
+}
+
+.how-floating-icon {
+  width: 65px;
+  height: 65px;
+  border-radius: 20px;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  font-size: 34px;
+  box-shadow: 0 12px 30px rgba(40, 60, 45, 0.12);
+}
+
+.icon-one {
+  top: 30px;
+  left: 60px;
+}
+
+.icon-two {
+  top: 50px;
+  right: 40px;
+}
+
+.icon-three {
+  bottom: 50px;
+  left: 40px;
+}
+
+.icon-four {
+  bottom: 25px;
+  right: 70px;
+}
+
+
+/* ==================== PROCESS SECTION ==================== */
+
+.how-steps-section {
+  padding: 90px 7%;
+  text-align: center;
+  background: white;
+}
+
+.how-steps-section > h2,
+.technology-section > h2 {
+  margin: 0;
+  font-size: clamp(30px, 4vw, 46px);
+  line-height: 1.2;
+  color: #26352c;
+}
+
+.how-steps-section h2 span,
+.technology-section h2 span {
+  color: #3b8d55;
+}
+
+.how-intro {
+  max-width: 700px;
+  margin: 18px auto 55px;
+  color: #737d76;
+  line-height: 1.7;
+  font-size: 15px;
+}
+
+.how-process {
+  max-width: 1250px;
+  margin: auto;
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  gap: 16px;
+}
+
+.how-process-card {
+  flex: 1;
+  padding: 32px 25px;
+  border: 1px solid #e9eee8;
+  border-radius: 18px;
+  background: #fbfdf9;
+  text-align: left;
+  position: relative;
+  transition: 0.25s ease;
+}
+
+.how-process-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 18px 40px rgba(50, 80, 55, 0.08);
+}
+
+.process-number {
+  position: absolute;
+  top: 18px;
+  right: 20px;
+  color: #cddbd0;
+  font-size: 28px;
+  font-weight: 800;
+}
+
+.process-icon {
+  width: 65px;
+  height: 65px;
+  border-radius: 17px;
+  background: #eaf6e9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 34px;
+  margin-bottom: 22px;
+}
+
+.how-process-card h3 {
+  margin: 0 0 12px;
+  font-size: 18px;
+  color: #2d4033;
+}
+
+.how-process-card p {
+  margin: 0;
+  color: #748078;
+  line-height: 1.7;
+  font-size: 14px;
+}
+
+.process-arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #72a27d;
+  font-size: 26px;
+  font-weight: 700;
+}
+
+
+/* ==================== RAG SECTION ==================== */
+
+.rag-section {
+  padding: 95px 9%;
+  background: #f2f8f1;
+}
+
+.rag-content {
+  max-width: 1150px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 0.9fr;
+  gap: 80px;
+  align-items: center;
+}
+
+.rag-text h2 {
+  margin: 0 0 25px;
+  font-size: clamp(34px, 4vw, 50px);
+  line-height: 1.1;
+}
+
+.rag-text h2 span {
+  color: #3b8d55;
+}
+
+.rag-text p {
+  color: #69766e;
+  line-height: 1.8;
+  font-size: 15px;
+  margin-bottom: 20px;
+}
+
+.rag-flow {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.rag-box {
+  width: 280px;
+  min-height: 95px;
+  background: white;
+  border: 1px solid #e1e9df;
+  border-radius: 17px;
+  padding: 18px 22px;
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: 45px 1fr;
+  grid-template-rows: 1fr 1fr;
+  align-items: center;
+  box-shadow: 0 10px 25px rgba(40, 70, 45, 0.06);
+}
+
+.rag-box span {
+  grid-row: 1 / 3;
+  font-size: 30px;
+}
+
+.rag-box strong {
+  color: #2d4735;
+  font-size: 16px;
+}
+
+.rag-box small {
+  color: #829087;
+  font-size: 12px;
+}
+
+.rag-line {
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #5b9568;
+  font-size: 24px;
+}
+
+
+/* ==================== TECHNOLOGY ==================== */
+
+.technology-section {
+  padding: 90px 7%;
+  text-align: center;
+  background: white;
+}
+
+.technology-grid {
+  max-width: 1150px;
+  margin: 55px auto 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+}
+
+.technology-card {
+  padding: 30px 25px;
+  border: 1px solid #e9eee9;
+  border-radius: 17px;
+  background: #fcfdfb;
+  transition: 0.25s ease;
+}
+
+.technology-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(50, 80, 55, 0.08);
+}
+
+.technology-card > div {
+  font-size: 38px;
+  margin-bottom: 18px;
+}
+
+.technology-card h3 {
+  margin: 0 0 10px;
+  color: #304636;
+  font-size: 17px;
+}
+
+.technology-card p {
+  margin: 0;
+  color: #768078;
+  line-height: 1.7;
+  font-size: 13px;
+}
+
+
+/* ==================== FINAL CTA ==================== */
+
+.how-final-cta {
+  padding: 85px 20px;
+  text-align: center;
+  background: #eaf5e7;
+}
+
+.how-final-cta h2 {
+  margin: 0 0 14px;
+  font-size: clamp(30px, 4vw, 45px);
+  color: #294232;
+}
+
+.how-final-cta p {
+  margin: 0 auto 28px;
+  color: #6c796f;
+  font-size: 15px;
+}
+
+
+/* ==================== FOOTER ==================== */
+
+.how-footer {
+  padding: 40px 8%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+  background: #1f3327;
+  color: white;
+}
+
+.how-footer strong {
+  font-size: 19px;
+}
+
+.how-footer p {
+  margin: 7px 0 0;
+  color: #aab8af;
+  font-size: 12px;
+}
+
+.footer-links {
+  display: flex;
+  gap: 25px;
+}
+
+.footer-links a {
+  color: #c9d4cd;
+  text-decoration: none;
+  font-size: 13px;
+}
+
+.footer-links a:hover {
+  color: white;
+}
+
+
+/* ==================== RESPONSIVE ==================== */
+
+@media (max-width: 1000px) {
+
+  .how-navbar {
+    padding: 0 4%;
+  }
+
+  .how-nav-links {
+    gap: 18px;
+  }
+
+  .how-hero {
+    padding: 60px 6%;
+  }
+
+  .how-hero-visual {
+    width: 350px;
+    height: 350px;
+  }
+
+  .how-big-icon {
+    width: 220px;
+    height: 220px;
+    font-size: 100px;
+  }
+
+  .how-process {
+    flex-wrap: wrap;
+  }
+
+  .how-process-card {
+    flex: 0 0 calc(50% - 35px);
+  }
+
+  .process-arrow {
+    display: none;
+  }
+
+  .rag-content {
+    gap: 45px;
+  }
+}
+
+
+@media (max-width: 750px) {
+
+  .how-navbar {
+    min-height: auto;
+    padding: 15px 5%;
+    flex-wrap: wrap;
+    gap: 18px;
+  }
+
+  .how-nav-links {
+    width: 100%;
+    order: 3;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .how-start-btn {
+    margin-left: auto;
+  }
+
+  .how-hero {
+    flex-direction: column;
+    text-align: center;
+    padding: 65px 6%;
+  }
+
+  .how-hero-content > p {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .how-hero-visual {
+    width: 300px;
+    height: 300px;
+  }
+
+  .how-big-icon {
+    width: 190px;
+    height: 190px;
+    font-size: 85px;
+  }
+
+  .how-floating-icon {
+    width: 52px;
+    height: 52px;
+    font-size: 27px;
+  }
+
+  .how-process-card {
+    flex: 0 0 100%;
+  }
+
+  .rag-content {
+    grid-template-columns: 1fr;
+  }
+
+  .rag-text {
+    text-align: center;
+  }
+
+  .rag-flow {
+    margin-top: 20px;
+  }
+
+  .technology-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .how-footer {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-links {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+
+@media (max-width: 480px) {
+
+  .how-logo-subtitle {
+    display: none;
+  }
+
+  .how-nav-link {
+    font-size: 12px;
+  }
+
+  .how-start-btn {
+    padding: 10px 14px;
+    font-size: 12px;
+  }
+
+  .how-hero h1 {
+    font-size: 40px;
+  }
+
+  .how-hero-content > p {
+    font-size: 14px;
+  }
+
+  .how-hero-visual {
+    width: 260px;
+    height: 260px;
+  }
+
+  .how-big-icon {
+    width: 165px;
+    height: 165px;
+    font-size: 72px;
+  }
+
+  .rag-box {
+    width: 100%;
+    max-width: 280px;
+  }
+}
