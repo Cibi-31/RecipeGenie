@@ -29,7 +29,7 @@ Help users understand ingredient matches, missing ingredients, and recipe prepar
 - 🔎 Semantic retrieval using embeddings and FAISS
 - 📊 Ingredient Match and Recipe Coverage information
 - 🧾 Displays ingredients you have and ingredients you need
-## Project Screenshots
+## Application Outcome
 
 ### 🏠 Home Page
 ![RecipeGenie Homepage](screenshots/homepage.png)
