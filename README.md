@@ -7,7 +7,7 @@ RecipeGenie – AI Kitchen Waste & Recipe Assistant is an AI-powered application
 
 The application uses computer vision, semantic search, and Retrieval-Augmented Generation (RAG) to retrieve relevant recipes, evaluate ingredient matches, and provide useful cooking suggestions. It also highlights missing ingredients, helping users decide which recipes they can prepare with the ingredients available.
 
-Objectives
+## Objectives
 
 Reduce kitchen food waste by making better use of available ingredients.
 
