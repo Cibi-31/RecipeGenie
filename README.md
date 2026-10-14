@@ -2,7 +2,7 @@
 
 RecipeGenie is an AI-powered recipe recommendation system that helps users discover recipes from available ingredients and ingredient images, with the goal of reducing kitchen food waste.
 
-## ✨ Features
+## Features
 
 - 🥕 Search recipes using available ingredients
 - 🍽️ Search recipes by dish name
@@ -11,7 +11,7 @@ RecipeGenie is an AI-powered recipe recommendation system that helps users disco
 - 🔎 Semantic retrieval using embeddings and FAISS
 - 📊 Ingredient Match and Recipe Coverage information
 - 🧾 Displays ingredients you have and ingredients you need
-## 📸 Project Screenshots
+## Project Screenshots
 
 ### 🏠 Home Page
 ![RecipeGenie Homepage](screenshots/homepage.png)
@@ -28,7 +28,7 @@ RecipeGenie is an AI-powered recipe recommendation system that helps users disco
 ![Recommended Recipe 2](screenshots/recommeded_recipe2.png)
 
 ![Recommended Recipe 3](screenshots/recommended_recipe3.png)
-## 🛠️ Tech Stack
+## Tech Stack
 
 ### Frontend
 - React
@@ -47,7 +47,7 @@ RecipeGenie is an AI-powered recipe recommendation system that helps users disco
 - Nomic Embed Text — text embeddings
 - FAISS — vector similarity search
 
-## 🏗️ Project Structure
+## Project Structure
 
 ```text
 AI-Kitchen-Waste-Recipe-Assistant/
@@ -59,14 +59,14 @@ AI-Kitchen-Waste-Recipe-Assistant/
 └── README.md
 ```
 
-## ⚙️ Prerequisites
+## Prerequisites
 
 - Python
 - Node.js and npm
 - Ollama
 - Git
 
-## 🚀 Getting Started
+## Getting Started
 
 ### 1. Clone the repository
 
@@ -121,21 +121,21 @@ npm run dev
 
 Open the local URL printed by Vite in your terminal.
 
-## 📁 Dataset and Vector Index
+## Dataset and Vector Index
 
 RecipeGenie uses a recipe dataset and a FAISS vector index for retrieval. Ensure these files are available before running the application. Follow the dataset's original license and usage terms.
 
-## 🔐 Security
+## Security
 
 - Never upload `.env` files, API keys, or passwords.
 - Keep local virtual environments and `node_modules` out of version control.
 - Do not commit private credentials or personal data.
 
-## 🎯 Project Objective
+## Project Objective
 
 To help users make better use of available ingredients, discover suitable recipes, and reduce avoidable kitchen food waste.
 
-## 👩‍💻 Author
+##  Author
 
 **Cibiksha V**
 
