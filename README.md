@@ -1,6 +1,23 @@
 ﻿# 🍲 RecipeGenie — AI-Powered Recipe Assistant
 
 RecipeGenie is an AI-powered recipe recommendation system that helps users discover recipes from available ingredients and ingredient images, with the goal of reducing kitchen food waste.
+Project Overview
+
+RecipeGenie – AI Kitchen Waste & Recipe Assistant is an AI-powered application that helps users discover recipes based on the ingredients they already have. Users can enter ingredients manually or upload an image of available ingredients, and the system identifies the ingredients and recommends suitable recipes.
+
+The application uses computer vision, semantic search, and Retrieval-Augmented Generation (RAG) to retrieve relevant recipes, evaluate ingredient matches, and provide useful cooking suggestions. It also highlights missing ingredients, helping users decide which recipes they can prepare with the ingredients available.
+
+Objectives
+
+Reduce kitchen food waste by making better use of available ingredients.
+
+Generate relevant recipe recommendations from user-provided ingredients.
+
+Identify ingredients from uploaded images using a vision-language model.
+
+Retrieve recipes using semantic similarity rather than relying only on exact keyword matches.
+
+Help users understand ingredient matches, missing ingredients, and recipe preparation steps.
 
 ## Features
 
